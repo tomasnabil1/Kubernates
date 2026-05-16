@@ -14,3 +14,8 @@ spec:
   containers:
      - name: nginx-container
        image: nginx
+       ports:
+          - containerPort: 8080
+       env:
+       - name: APP_COLOR
+         value: pink
